@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'posui';
+import { multiply, Button } from 'posui';
 
 export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
@@ -13,6 +13,14 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Result: {result}</Text>
+      <Button
+        text="hello"
+        onPress={() => {
+          console.log(result);
+        }}
+        color="red"
+        textColor="#fff"
+      />
     </View>
   );
 }
