@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply, Button } from 'posui';
+import { multiply, Button, Card } from 'posui';
 
 export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
@@ -21,6 +21,7 @@ export default function App() {
         color="red"
         textColor="#fff"
       />
+      <Card />
     </View>
   );
 }
