@@ -1,5 +1,5 @@
 {
-  "name": "posui",
+  "name": "@ghulamyazdani/posui",
   "version": "0.1.0",
   "description": "ui component library ",
   "main": "lib/commonjs/index",
@@ -33,6 +33,7 @@
     "prepack": "bob build",
     "release": "release-it",
     "example": "yarn --cwd example",
+    "ex": "cd /example && yarn start && cd -",
     "bootstrap": "yarn example && yarn install"
   },
   "keywords": [
@@ -72,6 +73,7 @@
     "react": "18.2.0",
     "react-native": "0.72.4",
     "react-native-builder-bob": "^0.20.0",
+    "react-native-linear-gradient": "^2.8.3",
     "release-it": "^15.0.0",
     "typescript": "^5.0.2"
   },
@@ -155,5 +157,8 @@
         }
       ]
     ]
+  },
+  "dependencies": {
+    "react-native-linear-gradient": "^2.8.3"
   }
 }

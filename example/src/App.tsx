@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, SafeAreaView } from 'react-native';
 import { multiply, Button, Card } from 'posui';
 
 export default function App() {
@@ -11,18 +11,22 @@ export default function App() {
   }, []);
 
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-      <Button
+    <SafeAreaView style={styles.container}>
+      {/* <Text>Result: {result}</Text> */}
+      {/* <Button
         text="hello"
         onPress={() => {
           console.log(result);
         }}
         color="red"
         textColor="#fff"
-      />
-      <Card />
-    </View>
+      /> */}
+      <Card>
+        <Text>Heelo</Text>
+      </Card>
+
+      {/* <ShimmerLoader width={100} height={30} /> */}
+    </SafeAreaView>
   );
 }
 
