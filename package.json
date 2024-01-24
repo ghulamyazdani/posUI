@@ -78,8 +78,14 @@
     "typescript": "^5.0.2"
   },
   "peerDependencies": {
+    "@types/react": "*",
+    "@types/react-native": "*",
     "react": "*",
-    "react-native": "*"
+    "react-dom": "*",
+    "react-native": "*",
+    "react-native-safe-area-context": "*",
+    "react-native-svg": "*",
+    "react-native-linear-gradient": "*"
   },
   "engines": {
     "node": ">= 16.0.0"

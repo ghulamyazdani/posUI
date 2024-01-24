@@ -1,7 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import * as React from 'react';
 
-import { StyleSheet, View, Text, SafeAreaView } from 'react-native';
-import { multiply, Button, Card } from 'posui';
+import { StyleSheet, Text, SafeAreaView } from 'react-native';
+import { multiply, Card } from 'posui';
 
 export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
