@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react-native/no-inline-styles */
-import { View, TouchableOpacity, Text } from 'react-native';
+import { View } from 'react-native';
 import React from 'react';
 
 export const Card = ({ children }: any) => {
