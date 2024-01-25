@@ -1,5 +1,5 @@
 {
-  "name": "@ghulamyazdani/posui",
+  "name": "posui",
   "version": "0.2.0",
   "description": "ui component library ",
   "main": "lib/commonjs/index",
@@ -78,14 +78,8 @@
     "typescript": "^5.0.2"
   },
   "peerDependencies": {
-    "@types/react": "*",
-    "@types/react-native": "*",
     "react": "*",
-    "react-dom": "*",
-    "react-native": "*",
-    "react-native-safe-area-context": "*",
-    "react-native-svg": "*",
-    "react-native-linear-gradient": "*"
+    "react-native": "*"
   },
   "engines": {
     "node": ">= 16.0.0"

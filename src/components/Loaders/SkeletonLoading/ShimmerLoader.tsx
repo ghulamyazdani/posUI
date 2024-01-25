@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, StyleSheet, Animated } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+// import { LinearGradient } from 'expo-linear-gradient';
+
 export const ShimmerLoader = ({
   duration = 1500,
   width = 50,
@@ -36,7 +38,7 @@ export const ShimmerLoader = ({
       <Animated.View
         style={[styles.animatedContainer, { transform: [{ translateX }] }]}
       >
-        {/* <View className="w-full h-ful"></View> */}
+        {/* <View style={styles.gradient}></View> */}
         <LinearGradient
           colors={['transparent', '#E3E4E7', 'transparent']}
           start={{ x: 0, y: 0 }}
