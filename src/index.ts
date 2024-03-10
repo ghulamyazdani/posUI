@@ -2,7 +2,8 @@ import { Button } from './components/Button/Button';
 import { Card } from './components/Card/Card';
 import { ShimmerLoader } from './components/Loaders/SkeletonLoading/ShimmerLoader';
 import { PosUIThemeProvider } from './core/PosUIProvier';
-import { PageConatainers, ScreenWrapper } from './components/Containers';
+import PageConatainers from './components/Containers/PageConatainers';
+import ScreenWrapper from './components/Containers/ScreenWrapper';
 function multiply(a: number, b: number): Promise<number> {
   return Promise.resolve(a * b);
 }
