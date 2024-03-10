@@ -1,7 +1,7 @@
 import { View, StatusBar } from 'react-native';
 import React from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { useThemeHook } from 'src/core';
+import useThemeHook from '../../core/useTheme';
 
 const ScreenWrapper = ({ children, bgDark, bgLight }: any) => {
   const insets = useSafeAreaInsets();
