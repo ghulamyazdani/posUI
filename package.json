@@ -1,6 +1,6 @@
 {
   "name": "@ghulamyazdani/posui",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "ui component library ",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
