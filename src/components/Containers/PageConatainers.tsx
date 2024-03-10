@@ -1,7 +1,7 @@
 import { SafeAreaView, StatusBar } from 'react-native';
 import React from 'react';
 import useThemeHook from '../../core/useTheme';
-export const PageConatainers = ({ children }: any) => {
+const PageConatainers = ({ children }: any) => {
   const { theme, isDarkMode }: any = useThemeHook();
   // const TRANSITIONS = ['fade', 'slide', 'none'] as const;
   // const [hidden, setHidden] = useState(false);
@@ -22,3 +22,5 @@ export const PageConatainers = ({ children }: any) => {
     </SafeAreaView>
   );
 };
+
+export default PageConatainers;
