@@ -2,6 +2,7 @@
 
 import React, { createContext, useContext, useState } from 'react';
 import { lightTheme, darkTheme } from '../themes/theme';
+import { colorsLight, colorsDark } from '../themes/config';
 
 const ThemeContext = createContext({});
 
@@ -21,10 +22,18 @@ export const PosUIThemeProvider = ({ children }: any) => {
   };
 
   const theme = isDarkMode ? darkTheme : lightTheme;
+  const colors = isDarkMode ? colorsDark : colorsLight;
 
   return (
     <ThemeContext.Provider
-      value={{ theme, toggleTheme, isDarkMode, setDarkMode, setLightMode }}
+      value={{
+        theme,
+        colors,
+        toggleTheme,
+        isDarkMode,
+        setDarkMode,
+        setLightMode,
+      }}
     >
       {children}
     </ThemeContext.Provider>
@@ -32,5 +41,10 @@ export const PosUIThemeProvider = ({ children }: any) => {
 };
 
 export const useTheme = () => {
-  return useContext(ThemeContext);
+  const context = useContext(ThemeContext);
+
+  if (context === undefined) {
+    throw new Error('useTheme must be used within a ThemeProvider');
+  }
+  return context;
 };

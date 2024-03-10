@@ -1,10 +1,17 @@
 import { useTheme } from './PosUIProvier';
 const useThemeHook = () => {
-  const { theme, toggleTheme, isDarkMode, setDarkMode, setLightMode }: any =
-    useTheme();
+  const {
+    theme,
+    colors,
+    toggleTheme,
+    isDarkMode,
+    setDarkMode,
+    setLightMode,
+  }: any = useTheme();
 
   return {
     theme,
+    colors,
     toggleTheme,
     isDarkMode,
     setDarkMode,

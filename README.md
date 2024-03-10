@@ -1,6 +1,6 @@
 # posui
 
-ui component library 
+ui component library
 
 ## Installation
 

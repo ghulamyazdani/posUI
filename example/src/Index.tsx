@@ -1,20 +1,14 @@
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  SafeAreaView,
-  StyleSheet,
-} from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import React from 'react';
 import { useThemeHook } from 'posui';
-import { AccountIcon, BitDropIconMd } from 'posui';
+import { AccountIcon } from 'posui';
+import { PageConatainers } from 'posui';
 const Index = () => {
   const { theme, toggleTheme, isDarkMode }: any = useThemeHook();
   return (
-    <SafeAreaView style={styles.container}>
+    <PageConatainers>
       <View>
         <AccountIcon />
-
         <TouchableOpacity onPress={toggleTheme}>
           <Text>
             {isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
@@ -22,7 +16,7 @@ const Index = () => {
         </TouchableOpacity>
         <Text>{theme.backgroundColor}</Text>
       </View>
-    </SafeAreaView>
+    </PageConatainers>
   );
 };
 
