@@ -9,12 +9,11 @@ export const Card = ({ children }: any) => {
       style={{
         // backgroundColor: 'red',
         borderStyle: 'solid',
-        // width: '100%',
+        width: '100%',
         maxWidth: '100%',
         borderRadius: 10,
         borderWidth: 1,
         borderColor: '#E3E4E7',
-        padding: 10,
       }}
     >
       {children}
