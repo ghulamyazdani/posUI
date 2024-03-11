@@ -1,7 +1,5 @@
 import { DarkTheme } from '@react-navigation/native';
 
-// import type { ThemeConfiguration } from '@/types/theme/config';
-
 export const colorsLight = {
   red500: '#C13333',
   gray800: '#303030',
@@ -11,6 +9,7 @@ export const colorsLight = {
   gray50: '#EFEFEF',
   purple500: '#44427D',
   purple100: '#E1E1EF',
+  white: '#FFFFFF',
 } as const;
 
 export const colorsDark = {
@@ -19,8 +18,10 @@ export const colorsDark = {
   gray200: '#BABABA',
   gray100: '#000000',
   purple500: '#A6A4F0',
+  purple600: '#A6A4F0',
   purple100: '#252732',
   purple50: '#1B1A23',
+  white: '#313132',
 } as const;
 
 const sizes = [12, 16, 24, 32, 40, 80] as const;

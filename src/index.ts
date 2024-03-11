@@ -4,13 +4,9 @@ import { ShimmerLoader } from './components/Loaders/SkeletonLoading/ShimmerLoade
 import { PosUIThemeProvider } from './core/PosUIProvier';
 import PageConatainers from './components/Containers/PageConatainers';
 import ScreenWrapper from './components/Containers/ScreenWrapper';
-function multiply(a: number, b: number): Promise<number> {
-  return Promise.resolve(a * b);
-}
 
 export {
   Button,
-  multiply,
   Card,
   ShimmerLoader,
   PosUIThemeProvider,
@@ -19,6 +15,7 @@ export {
 };
 
 export * from './core';
+export * from './components/Texts';
 // export * from './icons';
 
 // export * from './Icon';

@@ -3,7 +3,6 @@
 import React, { createContext, useContext, useState } from 'react';
 import { lightTheme, darkTheme } from '../themes/theme';
 import { colorsLight, colorsDark } from '../themes/config';
-
 const ThemeContext = createContext({});
 
 export const PosUIThemeProvider = ({ children }: any) => {
